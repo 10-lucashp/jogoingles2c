@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Quest - Will x Going To</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚀 FUTURE QUEST</h1>
+    <p>Will x Be Going To - Your future starts here!</p>
+</header>
+
+<main>
+
+<section class="explicacao">
+    <h2>📚 Como jogar</h2>
+    <ol>
+        <li>De 2 a 4 jogadores participam.</li>
+        <li>Todos começam na casa START.</li>
+        <li>Cada jogador clica em Jogar Dado.</li>
+        <li>Responda à pergunta apresentada.</li>
+        <li>Se acertar, avance uma casa extra.</li>
+        <li>Vence quem chegar primeiro ao FINISH!</li>
+    </ol>
+</section>
+
+<section class="game">
+
+    <div class="tabuleiro">
+        <h2>🌎 THE ROAD TO THE FUTURE</h2>
+        <div id="tabuleiro"></div>
+    </div>
+
+    <div class="painel">
+
+        <h2>🎮 Área dos jogadores</h2>
+
+        <label>Quantidade de jogadores:</label>
+
+        <select id="quantidade">
+            <option value="2">2 jogadores</option>
+            <option value="3">3 jogadores</option>
+            <option value="4">4 jogadores</option>
+        </select>
+
+        <button onclick="novoJogo()">Novo jogo</button>
+
+        <h3 id="vez">Jogador 1</h3>
+
+        <div id="dado">🎲</div>
+
+        <button onclick="jogarDado()" id="botaoDado">
+            JOGAR DADO
+        </button>
+
+        <p id="status">Clique no dado para começar!</p>
+
+        <div class="carta">
+            <h3 id="tipo">YOUR MISSION</h3>
+
+            <p id="pergunta">
+                Prepare-se para começar!
+            </p>
+
+            <p id="traducao"></p>
+
+            <div id="alternativas"></div>
+
+            <button onclick="verResposta()" id="responder" disabled>
+                CONFIRMAR RESPOSTA
+            </button>
+
+            <div id="resposta"></div>
+
+            <button onclick="proximoJogador()" id="proximo" hidden>
+                PRÓXIMO JOGADOR
+            </button>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="gramatica">
+
+    <h2>📖 Grammar Guide</h2>
+
+    <div class="colunas">
+
+        <div class="will">
+            <h3>WILL</h3>
+
+            <p>Usamos WILL para:</p>
+
+            <ul>
+                <li>Decisões tomadas na hora.</li>
+                <li>Promessas.</li>
+                <li>Previsões baseadas em opiniões.</li>
+            </ul>
+
+            <b>Example:</b>
+            <p>I think it will rain.</p>
+
+            <small>Tradução: Acho que vai chover.</small>
+
+            <p><b>Estrutura:</b></p>
+            Subject + WILL + Verb
+        </div>
+
+        <div class="going">
+            <h3>BE GOING TO</h3>
+
+            <p>Usamos BE GOING TO para:</p>
+
+            <ul>
+                <li>Planos já decididos.</li>
+                <li>Intenções.</li>
+                <li>Previsões com evidências.</li>
+            </ul>
+
+            <b>Example:</b>
+            <p>She is going to travel.</p>
+
+            <small>Tradução: Ela vai viajar.</small>
+
+            <p><b>Estrutura:</b></p>
+            Subject + AM/IS/ARE + GOING TO + Verb
+        </div>
+
+    </div>
+
+</section>
+
+<section class="materiais">
+
+    <h2>🎨 Materiais para montar</h2>
+
+    <ul>
+        <li>Cartolina ou papel-cartão.</li>
+        <li>Canetinhas coloridas.</li>
+        <li>Tesoura e cola.</li>
+        <li>Um dado.</li>
+        <li>Peões para os jogadores.</li>
+        <li>Cartões para as perguntas.</li>
+    </ul>
+
+    <p>
+        Decoração sugerida: foguetes, planetas, estrelas
+        e cores azul, laranja, roxo e verde.
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    FUTURE QUEST - ENGLISH PROJECT - 2º ANO C
+    Feito por Lucas Honorato Pereira & Samir Simon Abdallah Abdul Nour
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f0f3ff;
+    color: #172653;
+}
+
+header {
+    background: linear-gradient(135deg, #101a3a, #344e91);
+    color: white;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0;
+    color: #ffb65c;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #0000000c;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.explicacao li {
+    line-height: 1.9;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+}
+
+.tabuleiro {
+    text-align: center;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.casa {
+    min-height: 80px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 900;
+    border: 2px solid transparent;
+    font-size: 13px;
+}
+
+.casa small {
+    font-size: 11px;
+}
+
+.start, .finish {
+    background: #172653;
+    color: white;
+}
+
+.will {
+    background: #e8f0ff;
+    border-color: #3678f5;
+}
+
+.going {
+    background: #fff0df;
+    border-color: #f59a38;
+}
+
+.challenge {
+    background: #f1eaff;
+    border-color: #9061dc;
+}
+
+.mixed {
+    background: #e3f8ef;
+    border-color: #28a879;
+}
+
+.painel {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #3678f5;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    width: 100%;
+    margin: 5px 0;
+}
+
+button:hover {
+    background: #245ac5;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#dado {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.carta {
+    background: #f5f6ff;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+#tipo {
+    color: #9061dc;
+}
+
+#pergunta {
+    font-weight: 900;
+    font-size: 17px;
+}
+
+#traducao {
+    color: #68738e;
+    font-style: italic;
+}
+
+.alternativa {
+    background: white;
+    color: #172653;
+    border: 2px solid #dce3f5;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.alternativa.selecionada {
+    border-color: #3678f5;
+    background: #e8f0ff;
+}
+
+#resposta {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e3f8ef;
+    line-height: 1.5;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gramatica .will {
+    background: #edf3ff;
+    border-left: 5px solid #3678f5;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.gramatica .going {
+    background: #fff4e8;
+    border-left: 5px solid #f59a38;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.materiais li {
+    line-height: 1.9;
+}
+
+footer {
+    background: #101a3a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 750px) {
+
+    .game {
+        grid-template-columns: 1fr;
+    }
+
+    .colunas {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .casa {
+        min-height: 60px;
+        font-size: 10px;
+    }
+
+}
